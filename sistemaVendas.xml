@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+<vendas>
+
+<cliente>30680099112</cliente>
+
+<quantidade>2</quantidade>
+
+<somar>2010.00</somar>
+</vendas>
+<vendas>
+
+<cliente>90730597127</cliente>
+
+<quantidade>2</quantidade>
+
+<somar>1050.00</somar>
+</vendas>
+<vendas>
+
+<cliente>91030181210</cliente>
+
+<quantidade>1</quantidade>
+
+<somar>1800.00</somar>
+</vendas>
+</clientes>

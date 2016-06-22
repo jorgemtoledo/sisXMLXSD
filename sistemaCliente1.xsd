@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Este é o nosso nó principal -->
+<xs:element name="clientes">
+    <!-- Define um tipo formado por outros elementos -->
+    <xs:complexType>
+        <!-- Determina que os elementos a seguir devem aparecer nesta mesma ordem -->
+        <xs:sequence>
+            <!-- Define que o tipo "cliente" pode ocorrer N vezes (unbounded = sem limite)-->
+            <xs:element name="cliente" maxOccurs="unbounded">
+                <!-- Define que "cliente" é formado por outros elementos -->
+                <xs:complexType>
+                    <!-- Os componentes de "cliente" devem aparecer nessa ordem -->
+                     <xs:sequence>
+                         <!-- Define as regras do cpf -->
+                        <xs:element name="cpf">
+                            <!-- Define como tipo simples por não ser formado por outros elementos -->
+                            <xs:simpleType>
+                                <!-- Define o tipo "string" para cpf e informa que existem restrições -->
+                                <xs:restriction base="xs:string">
+                                    <!-- Determina como 10 o tamanho máximo -->
+                                    <xs:length value="11"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- Define que o elemento "nome" é obrigatório -->
+                         <xs:element name="nome" type="xs:string" maxOccurs="unbounded"></xs:element>
+                         <!-- Define que o elemento "sexo" é obrigatório -->
+                         <xs:element name="sexo" type="xs:string"></xs:element>
+                         <!-- Define que o elemento "data_nasc" é obrigatório -->
+                         <xs:element name="data_nasc"></xs:element>
+                         <!-- Define que o elemento "credito" é obrigatório -->
+                         <xs:element name="credito" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

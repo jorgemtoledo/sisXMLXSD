@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+
+<cliente>
+<cpf>30480099112</cpf>
+<nome>Maria</nome>
+<sexo>F</sexo>
+<data_nasc>45</data_nasc>
+<credito>S</credito>
+</cliente>
+<cliente>
+<cpf>90730597127</cpf>
+<nome>Joao</nome>
+<sexo>M</sexo>
+<data_nasc>35</data_nasc>
+<credito>S</credito>
+</cliente>
+<cliente>
+<cpf>91030181210</cpf>
+<nome>Pedro</nome>
+<sexo>M</sexo>
+<data_nasc>44</data_nasc>
+<credito>N</credito>
+</cliente>
+</clientes>
